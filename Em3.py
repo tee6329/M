@@ -643,8 +643,8 @@ def lineBot(op):
                     line.sendMessage(to, " 🔋MJ&BotSelf ยังอยู่ครับ✔")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
-                elif "คท " in msg.text:
-                    mmid = msg.text.replace("คท ","")
+                elif "คท" in msg.text:
+                    mmid = msg.text.replace("คท","")
                     line.sendContact(to, mmid)
                 elif "จุก:" in text:
                     midd = msg.text.replace("จุก:","")
@@ -1136,7 +1136,7 @@ def lineBot(op):
                         else:
                             group.preventedJoinByTicket = True
                             line.updateGroup(group)
-                            line.sendMessage(to, "เปิดเชิญด้วย QR โค้ดแล้ว")
+                            line.sendMessage(to, "ปิดเชิญด้วย QR โค้ดแล้ว")
                 elif text.lower() == 'กลุ่ม':
                     group = line.getGroup(to)
                     try:
