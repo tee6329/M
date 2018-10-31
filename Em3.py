@@ -3172,7 +3172,7 @@ def lineBot(op):
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
-                    msgs+="\n🎎By.เอ็มBotSelf🎎\n\nTotal Teman : %i" % len(kontak)
+                    msgs+="\n🎎MJ&BotSelf🎎\n\nTotal Teman : %i" % len(kontak)
                     line.sendMessage(msg.to, msgs)
 
                 elif msg.text in ["Blocklist"]: 
