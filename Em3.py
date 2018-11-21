@@ -23,21 +23,21 @@ line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
-#ki = LINE()
-#ki.log("Auth Token : " + str(ki.authToken))
-#ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
+ki = LINE()
+ki.log("Auth Token : " + str(ki.authToken))
+ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-#kk = LINE()
-#kk.log("Auth Token : " + str(kk.authToken))
-#kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
+kk = LINE()
+kk.log("Auth Token : " + str(kk.authToken))
+kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-#kc = LINE()
-#kc.log("Auth Token : " + str(kc.authToken))
-#kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
+kc = LINE()
+kc.log("Auth Token : " + str(kc.authToken))
+kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-#ks = LINE()
-#ks.log("Auth Token : " + str(ks.authToken))
-#ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
+ks = LINE()
+ks.log("Auth Token : " + str(ks.authToken))
+ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 print ("Login Succes")
 
 lineMID = line.profile.mid
@@ -103,7 +103,7 @@ settings = {
     "man1":"ตั้งข้อความ",
     "man2":"ตั้งข้อความ",
     "man3":"ตั้งข้อความ",
-    "message":"บัญชีนี้ได้การป้องกัน💢โดย MJ&Bot Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่อMJ&BOTได้ที่ MJ.KTC",
+    "message":"บัญชีนี้ได้การป้องกัน💢โดย bill&Bot Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่อMJ&BOTได้ที่ MJ.KTC",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -755,7 +755,7 @@ def lineBot(op):
                 elif text.lower() == 'บอท':
                     try:
                         arr = []
-                        owner = "u932a268262c0602c011a71c5ee2666b7"
+                        owner = "u429b88f94e55f4d2322202eac2101f46"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
@@ -916,7 +916,7 @@ def lineBot(op):
                     line.sendContact(to, lineMID)
                 elif text.lower() == 'ผส':
                     sendMessageWithMention(to, lineMID)
-                    line.sendContact(to, "u932a268262c0602c011a71c5ee2666b7")
+                    line.sendContact(to, "u429b88f94e55f4d2322202eac2101f46")
                 elif text.lower() == 'มิด':
                     line.sendMessage(msg.to,"[MID]\n" +  lineMID)
                 elif text.lower() == 'ชื่อ':
