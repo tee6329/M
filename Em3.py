@@ -1643,7 +1643,7 @@ def lineBot(op):
                             txt += '@Alin \n'
                         line.sendMessage(to, text=txt, contentMetadata={'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
                         line.sendMessage(to, "จำนวน {} คน".format(str(len(nama)))) 
-                elif text.lower() == 'ถอก':
+                elif text.lower() == 'เงียบจัง':
                     group = line.getGroup(msg.to)
                     nama = [contact.mid for contact in group.members]
                     k = len(nama)//20
