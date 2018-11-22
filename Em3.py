@@ -707,7 +707,7 @@ def lineBot(op):
                     start = time.time()
                     line.sendMessage(msg.to,"ความเร็วอยู่ที่")
                     line.sendMessage(msg.to,str(int(round((time.time() - start) * 1000)))+" ms")
-                elif 'ม่อนบุก' in text.lower():
+                elif 'เดอะพูห์' in text.lower():
                     if msg.toType == 2:
                         G = line.getGroup(to)
                         if G.preventedJoinByTicket == False:
@@ -729,7 +729,7 @@ def lineBot(op):
                             kc.acceptGroupInvitationByTicket(to, Ti)
                             G.preventedJoinByTicket = True
                             line.updateGroup(G)
-                elif text.lower() == 'ม่อนไป':
+                elif text.lower() == 'จบพูห์':
                     if msg.toType == 2:
                         ginfo = line.getGroup(to)
                         try:
