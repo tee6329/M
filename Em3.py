@@ -35,9 +35,9 @@ line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 #kc.log("Auth Token : " + str(kc.authToken))
 #kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-ks = LINE()
-ks.log("Auth Token : " + str(ks.authToken))
-ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
+#ks = LINE()
+#ks.log("Auth Token : " + str(ks.authToken))
+#ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 print ("Login Succes")
 
 lineMID = line.profile.mid
@@ -4075,10 +4075,10 @@ def lineBot(op):
                     line.sendText(msg.to,"เช็คเหี้ยไรนักหนาบิวรำคาน")
                 if msg.text in ["speed","sp","Speed","สปีด","!speed","/speed"]:
                     line.sendText(msg.to,"แรงขนาดนี้ บิวนี้ไลค์เลย👍")
-                if msg.text in ["กำ","กรรม","กำๆ","นม","กำแรงๆ","กำำ","กำน่ะ"]:
+                if msg.text in ["กำ","กรรม","กำๆ","กัม","กำแรงๆ","กำำ","กำน่ะ"]:
                     line.sendText(msg.to,"กำอะไร มากำหำบิวมั้ยอิอิ!!.")
                 if msg.text in ["555","5555","55555","55+","55++","555+","555++","5555+","5555++"]:
-                    line.sendText(msg.to,"ข่ำไร บิวข่ำด้วยฮ่าๆ😁😀")				
+                    line.sendText(msg.to,"ข่ำเหี้ยไรกัน บิวข่ำด้วยฮ่าๆ😁😀")				
                 if msg.text in dangerMessage:
                     random.choice(Rfu).kickoutFromGroup(receiver,[sender])
                     random.choice(Rfu).sendText(msg.to,"ตรวจพบคำสั่งของบอทลบกลุ่ม  MJ&BotSelf จำเป็นต้องนำออกเพื่อความปลอดภัยของสมาชิก")										
