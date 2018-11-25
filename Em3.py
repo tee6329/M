@@ -627,20 +627,20 @@ def lineBot(op):
                             mc += "◉ " + line.getContact(mi_d).displayName + "\n"
                         line.sendMessage(to, mc)              
                 elif text.lower() == '.เทส':
-                    ki.sendMessage(to, "MJ&BotSelfยังอยู่ครับ")
-                elif text.lower() == 'เทส':
-                    line.sendMessage(to, "☣さণさபิວ☣กำลังโหลด:▒...0%")
-                    line.sendMessage(to, "█▒... 10.0%")
-                    line.sendMessage(to, "██▒... 20.0%")
-                    line.sendMessage(to, "███▒... 30.0%")
-                    line.sendMessage(to, "████▒... 40.0%")
-                    line.sendMessage(to, "█████▒... 50.0%")
-                    line.sendMessage(to, "██████▒... 60.0%")
-                    line.sendMessage(to, "███████▒... 70.0%")
-                    line.sendMessage(to, "████████▒... 80.0%")
-                    line.sendMessage(to, "█████████▒... 90.0%")
-                    line.sendMessage(to, "███████████..100.0%")
-                    line.sendMessage(to, " 🔋☣さণさபิວ☣ ยังอยู่ครับ✔")
+                    ki.sendMessage(to, "Bill&BotSelfยังอยู่ครับ")
+                elif text.lower() == 'ด่า':
+                    line.sendMessage(to, "[[บิวจะด่าแร้วน่ะตะเอง]]")
+                    line.sendMessage(to, "ไอเหี้ย")
+                    line.sendMessage(to, "ไอสัส")
+                    line.sendMessage(to, "ไอชาติหมา")
+                    line.sendMessage(to, "ไอหน้าหี")
+                    line.sendMessage(to, "ไอน่าคางคก")
+                    line.sendMessage(to, "อีดอกทอง")
+                    line.sendMessage(to, "อีส้นตีน")
+                    line.sendMessage(to, "อีน่าหนีงหี")
+                    line.sendMessage(to, "พ่อมึงตาย")
+                    line.sendMessage(to, "แม่มึงตาย")
+                    line.sendMessage(to, " [[บิวด่าเล่นๆน่าตะเอง]]")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
                 elif "คท" in msg.text:
@@ -707,7 +707,7 @@ def lineBot(op):
                     start = time.time()
                     line.sendMessage(msg.to,"ความเร็วอยู่ที่")
                     line.sendMessage(msg.to,str(int(round((time.time() - start) * 1000)))+" ms")
-                elif 'ม่อนบุก' in text.lower():
+                elif 'สาวกมา' in text.lower():
                     if msg.toType == 2:
                         G = line.getGroup(to)
                         if G.preventedJoinByTicket == False:
@@ -729,7 +729,7 @@ def lineBot(op):
                             kc.acceptGroupInvitationByTicket(to, Ti)
                             G.preventedJoinByTicket = True
                             line.updateGroup(G)
-                elif text.lower() == 'ม่อนไป':
+                elif text.lower() == 'กลับได้':
                     if msg.toType == 2:
                         ginfo = line.getGroup(to)
                         try:
@@ -911,10 +911,10 @@ def lineBot(op):
                      line.sendMessage(to, "👍ส่งรูปมา👎")      
 #==============================================================================#
 
-                elif text.lower() == 'bill':
+                elif text.lower() == 'ชื่อ':
                     sendMessageWithMention(to, lineMID)
                     line.sendContact(to, lineMID)
-                elif text.lower() == 'เจ้าของบอท':
+                elif text.lower() == 'ทีมบอท':
                     sendMessageWithMention(to, lineMID)
                     line.sendContact(to, "u429b88f94e55f4d2322202eac2101f46")
                 elif text.lower() == 'มิด':
@@ -1102,7 +1102,7 @@ def lineBot(op):
                     group = line.getGroup(to)
                     GS = group.creator.mid
                     line.sendContact(to, GS)
-                    line.sendMessage(to, "เขาคือผู้สร้างกลุ่มนี้")
+                    line.sendMessage(to, "บิวรู้น่ะว่าคุนสร้างห้องนี้")
                 elif text.lower() == 'ไอดีกลุ่ม':
                     gid = line.getGroup(to)
                     line.sendMessage(to, "ไอดีกลุ่ม \n" + gid.id)
@@ -4071,8 +4071,8 @@ def lineBot(op):
                                           #sendMessageWithMention(to, contact.mid)
                                           line.sendMessage(msg.to, None, contentMetadata={"STKID":"51626512","STKPKGID":"11538","STKVER":"1"}, contentType=7)
                                           break
-                if msg.text in ["me","คท","Me",".คท","!me","/me"]:
-                    line.sendText(msg.to,"เช็คเหี้ยไรนักหนาบิวรำคาน")
+                if msg.text in ["ถถ","ถถถ","ถถถถ","ถถถถถ","ถถถถถถ","ถถถถถถถ"]:
+                    line.sendText(msg.to,"มึงพิมเหี้ยไรบิวไม่เข้าไจ")
                 if msg.text in ["speed","sp","Speed","สปีด","!speed","/speed"]:
                     line.sendText(msg.to,"แรงขนาดนี้ บิวนี้ไลค์เลย👍")
                 if msg.text in ["กำ","กรรม","กำๆ","กัม","กำแรงๆ","กำำ","กำน่ะ"]:
